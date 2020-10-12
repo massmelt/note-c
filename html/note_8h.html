@@ -403,9 +403,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aedfe8eec797fa14b80c9a836a3267a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="note_8h.html#aedfe8eec797fa14b80c9a836a3267a69">NoteSetUploadMode</a> (<a class="el" href="n__atof_8c.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *uploadMode, int uploadMinutes, bool align)</td></tr>
 <tr class="memdesc:aedfe8eec797fa14b80c9a836a3267a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Notecard upload mode and interval.  <a href="note_8h.html#aedfe8eec797fa14b80c9a836a3267a69">More...</a><br /></td></tr>
 <tr class="separator:aedfe8eec797fa14b80c9a836a3267a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16066f7dac3567ab6ea64779cd2514bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="note_8h.html#a16066f7dac3567ab6ea64779cd2514bc">NoteSetSyncMode</a> (<a class="el" href="n__atof_8c.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *uploadMode, int uploadMinutes, int downlaodHours, bool align, bool sync)</td></tr>
-<tr class="memdesc:a16066f7dac3567ab6ea64779cd2514bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Notecard upload mode, download mode and interval.  <a href="note_8h.html#a16066f7dac3567ab6ea64779cd2514bc">More...</a><br /></td></tr>
-<tr class="separator:a16066f7dac3567ab6ea64779cd2514bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b9120ff5b755405d76a3ba992197ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="note_8h.html#a65b9120ff5b755405d76a3ba992197ac">NoteSetSyncMode</a> (<a class="el" href="n__atof_8c.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *uploadMode, int uploadMinutes, int downloadMinutes, bool align, bool sync)</td></tr>
+<tr class="memdesc:a65b9120ff5b755405d76a3ba992197ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Notecard upload mode, download mode and interval.  <a href="note_8h.html#a65b9120ff5b755405d76a3ba992197ac">More...</a><br /></td></tr>
+<tr class="separator:a65b9120ff5b755405d76a3ba992197ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae104ead61afc8b629f8c6cd56f65fa3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="note_8h.html#ae104ead61afc8b629f8c6cd56f65fa3c">NoteTemplate</a> (<a class="el" href="n__atof_8c.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *target, <a class="el" href="struct_j.html">J</a> *body)</td></tr>
 <tr class="memdesc:ae104ead61afc8b629f8c6cd56f65fa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a template for a Notefile.  <a href="note_8h.html#ae104ead61afc8b629f8c6cd56f65fa3c">More...</a><br /></td></tr>
 <tr class="separator:ae104ead61afc8b629f8c6cd56f65fa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3852,8 +3852,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a16066f7dac3567ab6ea64779cd2514bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16066f7dac3567ab6ea64779cd2514bc">&#9670;&nbsp;</a></span>NoteSetSyncMode()</h2>
+<a id="a65b9120ff5b755405d76a3ba992197ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b9120ff5b755405d76a3ba992197ac">&#9670;&nbsp;</a></span>NoteSetSyncMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3874,7 +3874,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>downloadHours</em>, </td>
+          <td class="paramname"><em>downloadMinutes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3901,7 +3901,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uploadMode</td><td>The upload mode (for instance, <code>continuous</code>, or <code>periodic</code>). </td></tr>
     <tr><td class="paramname">uploadMinutes</td><td>The max number of minutes to wait between Notehub uploads. </td></tr>
-    <tr><td class="paramname">downloadHours</td><td>The max number of hours to wait between Notehub downloads. </td></tr>
+    <tr><td class="paramname">downloadMinutes</td><td>The max number of minutes to wait between Notehub downloads. </td></tr>
     <tr><td class="paramname">align</td><td>Flag to specify that uploads should be grouped within the specified period, rather than counting the number of minutes from first modified. </td></tr>
     <tr><td class="paramname">sync</td><td>Setting this flag when mode is <code>continuous</code> causes an immediate sync when a file is modified on the service side. </td></tr>
   </table>
